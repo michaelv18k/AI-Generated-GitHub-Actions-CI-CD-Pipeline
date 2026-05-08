@@ -11,5 +11,3 @@ def test_clean_claims_data_removes_null_claim_id():
 
     assert len(result) == 2
     assert result["claim_id"].isnull().sum() == 0
-
-test_clean_claims_data_removes_null_claim_id()
